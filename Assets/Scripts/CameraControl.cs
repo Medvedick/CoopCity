@@ -24,11 +24,14 @@ public class CameraControl : MonoBehaviour
             
         }
         lastMouse = Input.mousePosition;
+
         //Mouse  camera angle done.  
         //Вован локс
         //Keyboard commands
+
         float f = 0.0f;
         Vector3 p = GetBaseInput();
+
         if (p.sqrMagnitude > 0)
         { // only move while a direction key is pressed
             if (Input.GetKey(KeyCode.LeftShift))
